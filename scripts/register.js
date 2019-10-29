@@ -47,7 +47,18 @@ document.addEventListener('DOMContentLoaded', function (event) {
             console.log(err);
             return err.status;
         });
-        console.log('string KRzyska')
     }
 });
+
+function comparePass() {
+    if(document.getElementById("pass1").value != document.getElementById("pass2").value)
+    {
+        alert('UWAGA: podane hasła się różnią!');
+        document.getElementById("pass1").value = "";
+        document.getElementById("pass2").value = "";
+        return false;
+    } else {
+        return true;
+    }
+}
 

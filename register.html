@@ -50,7 +50,7 @@
 					</div>
 					<div class="grid-element">
 						<label for="password"><b>Hasło:</b></label>
-						<input type="password" placeholder="Wprowadź hasło" name="password" required pattern="[a-zA-Z]+" minlength=8>
+						<input type="password" placeholder="Wprowadź hasło" id="pass1" name="password" required pattern="[a-zA-Z]+" minlength=8>
 					</div>
 					<div class="grid-element">
 							<label for="email"><b>Email:</b></label>
@@ -58,7 +58,7 @@
 						</div>
 						<div class="grid-element">
 								<label for="passwordConfirm"><b>Powtórz hasło:</b></label>
-								<input type="password" placeholder="Wprowadź hasło ponownie" name="passwordConfirm" required>
+								<input type="password" placeholder="Wprowadź hasło ponownie" id="pass2" name="passwordConfirm" required>
 							</div>
 					<div class="grid-element">
 							<label for="birthdate"><b>Data urodzenia:</b></label>
@@ -78,7 +78,7 @@
 						<input type="file"  name="photo" required pattern="^.*\.((jpg)|(png)|(bmp)|(ico)|(tif)|(gif))$">
 					</div>
 					<div class="grid-element" id="submit">
-						<input type="submit" value="Rejestruj">
+						<input onclick="comparePass()" type="submit" value="Rejestruj">
 					</div> 
 				</form>		
 			</section>
