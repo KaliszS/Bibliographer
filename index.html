@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Home</title>
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	
+	<body>
+		<header>
+			<img src="img/logo.png" alt="logo">
+		</header>
+		<nav>
+			<div class="nav-cards-list">
+				<div class="nav-card card-nav-bg" onclick="window.location = 'index.html'">
+			  		<div class="nav-subtitle">
+						<a href="index.html"><p>Home</p></a>
+			  		</div>
+				</div>
+				<div class="nav-card card-nav-bg" onclick="window.location = 'register.html'">
+			  		<div class="nav-subtitle">
+						<a href="register.html"><p>Register</p></a>
+			  		</div>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<section class="box-area">
+				<h1>
+					<img src="img/favicon.ico" alt="ikonka nagłówka" title="ikonka" class="icon-h">
+					O projekcie
+				</h1>
+				<hr>
+				<article>
+					<p>Strona ta finalnie będzie służyć jako system zarządzania bibliografią, który można wykorzystywać podczas pisania prac inżynierskich/magisterskich (jak np.  Zotero lub Mendeley).
+					Pierwszy modułem, który został ukończony, jest rejestracja użytkownika, wykorzystując m.in. dane wymagane (required) oraz walidację danych wpisywanych w formularz rejestracyjny.
+				    Kolejne funkcjonalności zostaną dodane wraz z kolejnymi kamieniami milowymi projektu. Całość jest uruchamian przy pomocy dockera.</p>
+				</article>
+				<article>
+					<p>W celu uruchomienia należy ...</p>
+				</article>
+			</section>
+			<section class="box-area">
+				<h1>
+					<img src="img/favicon.ico" alt="ikonka nagłówka" title="ikonka" class="icon-h">
+					Changelog
+				</h1>
+				<hr>
+				<article>
+					<table>
+						<caption class="caption-bottom">Wersje serwisu</caption>
+						<thead>
+							<tr>
+								<td>Wersja</td>
+								<td>Data</td>
+								<td>Opis głównych zmian</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>0.1</td>
+								<td>15.10.2019</td>
+								<td>Stworzenie strony głównej</td>
+							</tr>
+							<tr>
+								<td>0.2</td>
+								<td>22.10.2019</td>
+								<td>Stworzenie skryptu walidacji</td>
+							</tr>
+							<tr>
+								<td>0.3</td>
+								<td>29.10.2019</td>
+								<td>Opracowanie layoutu formularza rejestracyjnego</td>
+							</tr>
+						</tbody>
+			
+					</table>
+				</article>	
+			</section>
+		</main>
+
+		<footer>
+			<p class="footer-inline left">&copy; 2019 Sebastian Kalisz</p>
+		</footer>
+
+		<script src="scripts/register.js"></script>
+	</body>
+</html>

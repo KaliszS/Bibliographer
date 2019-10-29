@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Register</title>
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	
+	<body>
+		<header>
+			<img src="img/logo.png" alt="logo">
+		</header>
+		<nav>
+			<div class="nav-cards-list">
+				<div class="nav-card card-nav-bg" onclick="window.location = 'index.html'">
+						<div class="nav-subtitle">
+						<a href="index.html"><p>Home</p></a>
+						</div>
+				</div>
+				<div class="nav-card card-nav-bg" onclick="window.location = 'register.html'">
+						<div class="nav-subtitle">
+						<a href="register.html"><p>Register</p></a>
+						</div>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<section class="box-area">
+				<h1>Rejestracja</h1>
+				<hr>
+				<form action="https://pi.iem.pw.edu.pl/register" method="POST" enctype="multipart/form-data" id="registration-form" class="grid-container">
+					<div class="grid-element">
+						<label for="firstname"><b>Imię:</b></label>
+						<input type="text" placeholder="Wprowadź imię" name="firstname" required pattern="^[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+">
+					</div>
+					<div class="grid-element">
+						<label for="lastname"><b>Nazwisko:</b></label>
+						<input type="text" placeholder="Wprowadź nazwisko" name="lastname" required pattern="^[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+">
+					</div>
+					<div class="grid-element">
+						<label for="login"><b>Login:</b></label>
+						<input type="text" placeholder="Wprowadź login" name="login" id="login" required pattern="[a-z]*" minlength=3 maxlength=12>
+					</div>
+					<div class="grid-element">
+						<label for="password"><b>Hasło:</b></label>
+						<input type="password" placeholder="Wprowadź hasło" name="password" required pattern="[a-zA-Z]+" minlength=8>
+					</div>
+					<div class="grid-element">
+							<label for="email"><b>Email:</b></label>
+							<input type="email" placeholder="Wprowadź adres email" name="email">
+						</div>
+						<div class="grid-element">
+								<label for="passwordConfirm"><b>Powtórz hasło:</b></label>
+								<input type="password" placeholder="Wprowadź hasło ponownie" name="passwordConfirm" required>
+							</div>
+					<div class="grid-element">
+							<label for="birthdate"><b>Data urodzenia:</b></label>
+							<input type="date" name="birthdate" required>
+					</div>
+					<div class="grid-element sex-radio">
+						<label for="sex"><b>Płeć:</b></label>
+						<input type="radio" name="sex" value="M" data-icon="" checked>
+						<input type="radio" name="sex" value="F" data-icon=''>
+					</div>
+					<div class="grid-element">
+							<label for="pesel"><b>PESEL:</b></label>
+							<input type="text" placeholder="Wprowadź numer PESEL" name="pesel" required pattern="[0-9]+" minlength=11 maxlength=11>
+					</div>
+					<div class="grid-element">
+						<label for="photo"><b>Zdjęcie:</b></label>
+						<input type="file"  name="photo" required pattern="^.*\.((jpg)|(png)|(bmp)|(ico)|(tif)|(gif))$">
+					</div>
+					<div class="grid-element" id="submit">
+						<input type="submit" value="Rejestruj">
+					</div> 
+				</form>		
+			</section>
+		</main>
+
+		<footer>
+			<p class="footer-inline left">&copy; 2019 Sebastian Kalisz</p>
+		</footer>
+
+		<script src="scripts/register.js"></script>
+	</body>
+</html>
